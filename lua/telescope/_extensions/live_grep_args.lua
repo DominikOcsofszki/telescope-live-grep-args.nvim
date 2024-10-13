@@ -94,6 +94,7 @@ return telescope.register_extension({
       setup_opts[k] = v
     end
   end,
+  health =  require("telescope-live-grep-args._health").check,
   exports = {
     live_grep_args = live_grep_args,
     live_grep_raw = live_grep_args, -- historical name
